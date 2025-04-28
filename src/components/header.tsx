@@ -34,7 +34,7 @@ export function Header() {
             </Link>
           </div>
           {/* Navigation items below logo */}
-          <nav className="flex flex-wrap justify-center space-x-2 mb-0">
+          <nav className="flex flex-nowrap justify-center space-x-2 mb-0">
             {navItems.map((item) => (
               <Link
                 key={item.path}
