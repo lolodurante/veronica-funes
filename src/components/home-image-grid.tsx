@@ -40,7 +40,7 @@ export default function HomeImageGrid() {
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 text-white text-sm uppercase tracking-wider z-10">
             <Link
-              href="/tienda"
+              href="/info"
               className="
                 flex items-center gap-2 px-10 py-5 bg-black text-white text-xl uppercase tracking-wider
                 transition-colors duration-200
@@ -48,7 +48,7 @@ export default function HomeImageGrid() {
                 rounded-none
               "
             >
-              TIENDA
+              INFO
               <span className="text-xl">➔</span>
             </Link>
           </div>
@@ -137,7 +137,7 @@ export default function HomeImageGrid() {
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 text-white text-sm uppercase tracking-wider z-10">
               <Link
-                href="/tienda"
+                href="/info"
                 className="
                   flex items-center gap-2 px-10 py-5 bg-black text-white text-xl uppercase tracking-wider
                   transition-colors duration-200
@@ -145,7 +145,7 @@ export default function HomeImageGrid() {
                   rounded-none
                 "
               >
-                TIENDA
+                INFO
                 <span className="text-xl">➔</span>
               </Link>
             </div>
