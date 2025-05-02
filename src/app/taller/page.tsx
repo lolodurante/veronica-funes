@@ -53,51 +53,42 @@ export default function TallerPage() {
               <div className="md:w-2/3">
                 <div className="mb-8">
                   <h3 className="text-xl uppercase mb-4 font-bold">ADULTOS</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <p className="flex justify-between">
+                  <div className="space-y-1">
+                    <p className="flex justify-between max-w-sm">
                         <span>Lunes</span>
-                        <span>18 a 20.30 hs.</span>
+                      <span>18 a 20:30 hs</span>
                       </p>
-                      <p className="flex justify-between">
+                    <p className="flex justify-between max-w-sm">
                         <span>Martes</span>
-                        <span>14 a 16.30 hs.</span>
+                      <span>14 a 16:30 hs</span>
                       </p>
-                      <p className="flex justify-between">
+                    <p className="flex justify-between max-w-sm">
                         <span>Miércoles</span>
-                        <span>13.30 a 16 hs.</span>
+                      <span>9:30 a 12 hs / 18 a 20:30 hs</span>
                       </p>
-                    </div>
-                    <div>
-                      <p className="flex justify-between">
-                        <span>Miércoles</span>
-                        <span>18 a 20.30 hs.</span>
-                        <span className="text-red-800">completo</span>
-                      </p>
-                      <p className="flex justify-between">
+                    <p className="flex justify-between max-w-sm">
                         <span>Jueves</span>
-                        <span>9.30 a 12 hs.</span>
-                        <span className="text-red-800">completo</span>
+                      <span>9:30 a 12 hs</span>
                       </p>
-                      <p className="flex justify-between">
-                        <span>Sábado</span>
-                        <span>10.30 a 13 hs.</span>
-                      </p>
-                    </div>
+                  </div>
+                </div>
+
+                <div className="mb-8">
+                  <h3 className="text-xl uppercase mb-4 font-bold">NIÑOS</h3>
+                  <div className="space-y-1">
+                    <p className="flex justify-between max-w-sm">
+                      <span>Martes</span>
+                      <span>17:30 a 19 hs</span>
+                    </p>
                   </div>
                 </div>
 
                 <div>
-                  <h3 className="text-xl uppercase mb-4 font-bold">NIÑOS</h3>
-                  <div>
-                    <p className="flex justify-between max-w-xs">
-                      <span>Martes</span>
-                      <span>18 a 19.30 hs</span>
-                    </p>
-                    <p className="flex justify-between max-w-xs">
+                  <h3 className="text-xl uppercase mb-4 font-bold">ADOLESCENTES</h3>
+                  <div className="space-y-1">
+                    <p className="flex justify-between max-w-sm">
                       <span>Jueves</span>
-                      <span>17.30 a 19 hs.</span>
-                      <span className="text-red-800">completo</span>
+                      <span>17:30 a 19:30 hs</span>
                     </p>
                   </div>
                 </div>

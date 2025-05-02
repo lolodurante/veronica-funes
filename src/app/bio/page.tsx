@@ -11,14 +11,14 @@ export default function BioPage() {
         <div className="flex flex-col md:flex-row md:gap-12 bg-white p-8 md:p-12 shadow-lg">
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <div className="relative aspect-square md:aspect-auto md:h-full overflow-hidden">
-              <Image
-                src="https://ext.same-assets.com/4226829879/125366376.jpeg"
-                alt="Verónica Funes"
-                fill
+          <Image
+            src="https://ext.same-assets.com/4226829879/125366376.jpeg"
+            alt="Verónica Funes"
+            fill
                 className="object-cover object-bottom"
-              />
-            </div>
+          />
           </div>
+        </div>
 
           <div className="w-full md:w-1/2 flex flex-col justify-center">
             <div className="space-y-6 text-gray-700 text-base md:text-lg">
