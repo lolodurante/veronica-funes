@@ -3,19 +3,18 @@ import Link from "next/link";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
-// Gallery images from the scraped site
 const galleryImages = [
-  { id: "taller-1", src: "https://ext.same-assets.com/4226829879/2911324671.jpeg", alt: "Taller 1" },
-  { id: "taller-2", src: "https://ext.same-assets.com/4226829879/3033374512.jpeg", alt: "Taller 2" },
-  { id: "taller-3", src: "https://ext.same-assets.com/4226829879/1010517313.jpeg", alt: "Taller 3" },
-  { id: "taller-4", src: "https://ext.same-assets.com/4226829879/1127255381.jpeg", alt: "Taller 4" },
-  { id: "taller-5", src: "https://ext.same-assets.com/4226829879/453020962.jpeg", alt: "Taller 5" },
-  { id: "taller-6", src: "https://ext.same-assets.com/4226829879/2047594812.jpeg", alt: "Taller 6" },
-  { id: "taller-7", src: "https://ext.same-assets.com/4226829879/4230249536.jpeg", alt: "Taller 7" },
-  { id: "taller-8", src: "https://ext.same-assets.com/4226829879/744681652.jpeg", alt: "Taller 8" },
-  { id: "taller-9", src: "https://ext.same-assets.com/4226829879/529239621.jpeg", alt: "Taller 9" },
-  { id: "taller-10", src: "https://ext.same-assets.com/4226829879/980617822.jpeg", alt: "Taller 10" },
-  { id: "taller-11", src: "https://ext.same-assets.com/4226829879/588264795.jpeg", alt: "Taller 11" },
+  { id: "taller-1", src: "/Taller/20231122_120508.jpg", alt: "Piezas en proceso en el taller" },
+  { id: "taller-2", src: "/Taller/20240622_131554.jpg", alt: "Pieza de cerámica esmaltada" },
+  { id: "taller-3", src: "/Taller/20250513_184833.jpg", alt: "Modelado en cerámica" },
+  { id: "taller-4", src: "/Taller/20250513_185403.jpg", alt: "Figura en proceso de modelado" },
+  { id: "taller-5", src: "/Taller/20250716_203143.jpg", alt: "Mesa de trabajo con piezas" },
+  { id: "taller-6", src: "/Taller/20251128_124210.jpg", alt: "Piezas pequeñas en secado" },
+  { id: "taller-7", src: "/Taller/642209140_10240612308504265_7349170416794760412_n.jpg", alt: "Producción del taller" },
+  { id: "taller-8", src: "/Taller/643878331_10240613298169006_7333616980038477843_n.jpg", alt: "Mesa con objetos cerámicos" },
+  { id: "taller-9", src: "/Taller/482021268_10235521745083361_5907039608749815762_n.jpg", alt: "Objeto cerámico esmaltado" },
+  { id: "taller-10", src: "/Taller/482213305_10235521745403369_6774453415298871594_n.jpg", alt: "Escultura de cerámica en proceso" },
+  { id: "taller-11", src: "/Taller/84338517_10221473578967988_2122271004561506304_n.jpg", alt: "Alumno trabajando una pieza" },
 ];
 
 export default function TallerPage() {
@@ -27,7 +26,7 @@ export default function TallerPage() {
         {/* Hero Banner */}
         <div className="relative h-[50vh] w-full">
           <Image
-            src="https://ext.same-assets.com/4226829879/1912866854.jpeg"
+            src="/Taller/20250513_185403.jpg"
             alt="Taller de Cerámica"
             fill
             className="object-cover"

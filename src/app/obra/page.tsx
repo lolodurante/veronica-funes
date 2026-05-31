@@ -8,24 +8,23 @@ import Lightbox from "yet-another-react-lightbox"; // Import Lightbox
 import type { Slide } from "yet-another-react-lightbox"; // Import Slide type
 import "yet-another-react-lightbox/styles.css"; // Import default styles
 
-// Updated gallery images with titles
 const galleryImages = [
-  { id: "obra-1", src: "https://ext.same-assets.com/4226829879/2280939087.jpeg", title: "Retratos de familia" },
-  { id: "obra-2", src: "https://ext.same-assets.com/4226829879/2780491278.jpeg", title: "Microcentro" },
-  { id: "obra-3", src: "https://ext.same-assets.com/4226829879/2515856495.jpeg", title: "#3/12" },
-  { id: "obra-4", src: "https://ext.same-assets.com/4226829879/329581194.jpeg", title: "Dulce montón" },
-  { id: "obra-5", src: "https://ext.same-assets.com/4226829879/3794183980.jpeg", title: "#24/8" },
-  { id: "obra-6", src: "https://ext.same-assets.com/4226829879/260207817.jpeg", title: "Sin titulo" }, // Corrected typo 'tutulo' -> 'titulo'
-  { id: "obra-7", src: "https://ext.same-assets.com/4226829879/524924198.jpeg", title: "Ella tiene su louis vitton aunque salga con un raton" },
-  { id: "obra-8", src: "https://ext.same-assets.com/4226829879/3002863329.jpeg", title: "#3/12" },
-  { id: "obra-9", src: "https://ext.same-assets.com/4226829879/3506304268.jpeg", title: "Frivolada" },
-  { id: "obra-10", src: "https://ext.same-assets.com/4226829879/2917537657.jpeg", title: "Catalogo" },
-  { id: "obra-11", src: "https://ext.same-assets.com/4226829879/2879638817.jpeg", title: "Cuantas veces te lo.tengo que decir" },
-  { id: "obra-12", src: "https://ext.same-assets.com/4226829879/933868517.jpeg", title: "Tierra adentro" },
-  { id: "obra-13", src: "https://ext.same-assets.com/4226829879/1863920999.jpeg", title: "Mascaron" },
-  { id: "obra-14", src: "https://ext.same-assets.com/4226829879/2147825276.jpeg", title: "La vaca atada" }, // Corrected typo '114.la' -> 'La'
-  { id: "obra-15", src: "https://ext.same-assets.com/4226829879/2045367587.jpeg", title: "Guardianes" },
-  { id: "obra-16", src: "https://ext.same-assets.com/4226829879/1830902576.jpeg", title: "Microcentro" },
+  { id: "obra-1", src: "/Obra/2280939087.jpg", title: "Retratos de familia" },
+  { id: "obra-2", src: "/Obra/3002863329.jpg", title: "Microcentro" },
+  { id: "obra-3", src: "/Obra/2515856495.jpg", title: "#3/12" },
+  { id: "obra-4", src: "/Obra/329581194.jpg", title: "Dulce montón" },
+  { id: "obra-5", src: "/Obra/3794183980.jpg", title: "#24/8" },
+  { id: "obra-6", src: "/Obra/IMG_0861.JPG", title: "Sin título" },
+  { id: "obra-7", src: "/Obra/IMG_0871.JPG", title: "Ella tiene su Louis Vuitton aunque salga con un ratón" },
+  { id: "obra-8", src: "/Obra/IMG_0879.JPG", title: "#3/12" },
+  { id: "obra-9", src: "/Obra/46c8068d-0bed-4161-a4ef-77e2eeadaa5a.jpg", title: "Frivolada" },
+  { id: "obra-10", src: "/Obra/IMG_0854.JPG", title: "Catálogo" },
+  { id: "obra-11", src: "/Obra/Detalle%203.jpeg", title: "Cuántas veces te lo tengo que decir" },
+  { id: "obra-12", src: "/Obra/El%20negro.jpeg", title: "Tierra adentro" },
+  { id: "obra-13", src: "/Obra/IMG_0857.JPG", title: "Mascarón" },
+  { id: "obra-14", src: "/Obra/IMG_0858.JPG", title: "La vaca atada" },
+  { id: "obra-15", src: "/Obra/IMG_0869.JPG", title: "Guardianes" },
+  { id: "obra-16", src: "/Obra/09a26a2b-06d9-4980-bf2b-76b7af6dd351.jpg", title: "Microcentro" },
 ];
 
 // Format images for lightbox (needs src and title)
@@ -38,8 +37,8 @@ const lightboxSlides = galleryImages.map(image => ({
 
 // Custom slide renderer
 function renderSlide({ slide }: { slide: Slide }) {
-  // Ensure slide has src and title
-  if (!slide.src || !slide.title) return null;
+  const gallerySlide = slide as Slide & { src?: string; title?: string };
+  if (!gallerySlide.src || !gallerySlide.title) return null;
 
   // Basic responsive check (example)
   const isSmallScreen = typeof window !== 'undefined' && window.innerWidth < 768;
@@ -48,19 +47,19 @@ function renderSlide({ slide }: { slide: Slide }) {
     <div style={{ display: 'flex', flexDirection: isSmallScreen ? 'column' : 'row', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ flex: isSmallScreen ? '1' : '0 0 70%', position: 'relative', width: isSmallScreen ? '90%' : '70%', height: isSmallScreen ? 'auto' : '90%' }}>
         <img
-          src={slide.src}
-          alt={slide.title}
+          src={gallerySlide.src}
+          alt={gallerySlide.title}
           style={{ objectFit: 'contain', width: '100%', height: '100%', display: 'block' }}
         />
       </div>
       {!isSmallScreen && (
         <div style={{ flex: '1', padding: '20px', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <h2 style={{ margin: 0, textAlign: 'center' }}>{slide.title}</h2>
+          <h2 style={{ margin: 0, textAlign: 'center' }}>{gallerySlide.title}</h2>
         </div>
       )}
       {isSmallScreen && (
          <div style={{ width: '90%', padding: '10px 0', color: '#fff', textAlign: 'center' }}>
-           <h2 style={{ margin: 0 }}>{slide.title}</h2>
+           <h2 style={{ margin: 0 }}>{gallerySlide.title}</h2>
         </div>
       )}
     </div>
@@ -106,7 +105,7 @@ export default function ObraPage() {
 
       {/* Lightbox Component */}
       <Lightbox
-        styles={{ backdrop: { backgroundColor: '#ffffff' } }} // White background
+        styles={{ container: { backgroundColor: '#ffffff' } }} // White background
         render={{ slide: renderSlide }} // Use custom slide renderer
         open={index >= 0}
         index={index}

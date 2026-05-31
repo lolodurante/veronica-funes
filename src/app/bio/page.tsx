@@ -12,7 +12,7 @@ export default function BioPage() {
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <div className="relative aspect-square md:aspect-auto md:h-full overflow-hidden">
           <Image
-            src="https://ext.same-assets.com/4226829879/125366376.jpeg"
+            src="/BIO/125366376.jpg"
             alt="Verónica Funes"
             fill
                 className="object-cover object-bottom"

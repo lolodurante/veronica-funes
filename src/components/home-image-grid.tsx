@@ -3,6 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function HomeImageGrid() {
+  const featuredImages = {
+    obra: "/Obra/IMG_0854.JPG",
+    info: "/objetos/IMG_0722.jpeg",
+    taller: "/Taller/20250513_185403.jpg",
+    bio: "/BIO/125366376.jpg",
+  };
+
   return (
     <div className="mx-auto w-full max-w-6xl">
       {/* MOBILE: cuadrícula vertical de cuadrados */}
@@ -10,7 +17,7 @@ export default function HomeImageGrid() {
         {/* OBRA */}
         <div className="relative group overflow-hidden w-full aspect-square">
           <Image
-            src="https://ext.same-assets.com/4226829879/505759149.jpeg"
+            src={featuredImages.obra}
             alt="Obra de cerámica"
             fill
             className="object-cover transition duration-500 grayscale group-hover:grayscale-0"
@@ -33,7 +40,7 @@ export default function HomeImageGrid() {
         {/* TIENDA */}
         <div className="relative group overflow-hidden w-full aspect-square">
           <Image
-            src="https://ext.same-assets.com/4226829879/4208146399.jpeg"
+            src={featuredImages.info}
             alt="Tienda de cerámica"
             fill
             className="object-cover transition duration-500 grayscale group-hover:grayscale-0"
@@ -56,7 +63,7 @@ export default function HomeImageGrid() {
         {/* TALLER */}
         <div className="relative group overflow-hidden w-full aspect-square">
           <Image
-            src="https://ext.same-assets.com/4226829879/821316787.jpeg"
+            src={featuredImages.taller}
             alt="Taller de cerámica"
             fill
             className="object-cover transition duration-500 grayscale group-hover:grayscale-0"
@@ -79,7 +86,7 @@ export default function HomeImageGrid() {
         {/* BIO */}
         <div className="relative group overflow-hidden w-full aspect-square">
           <Image
-            src="https://ext.same-assets.com/4226829879/125366376.jpeg"
+            src={featuredImages.bio}
             alt="Bio"
             fill
             className="object-cover transition duration-500 grayscale group-hover:grayscale-0"
@@ -107,7 +114,7 @@ export default function HomeImageGrid() {
           {/* OBRA - izquierda */}
           <div className="relative group overflow-hidden w-[40%] h-full">
             <Image
-              src="https://ext.same-assets.com/4226829879/505759149.jpeg"
+              src={featuredImages.obra}
               alt="Obra de cerámica"
               fill
               className="object-cover transition duration-500 grayscale group-hover:grayscale-0"
@@ -130,7 +137,7 @@ export default function HomeImageGrid() {
           {/* TIENDA - derecha */}
           <div className="relative group overflow-hidden w-[60%] h-full">
             <Image
-              src="https://ext.same-assets.com/4226829879/4208146399.jpeg"
+              src={featuredImages.info}
               alt="Tienda de cerámica"
               fill
               className="object-cover transition duration-500 grayscale group-hover:grayscale-0"
@@ -156,7 +163,7 @@ export default function HomeImageGrid() {
           {/* TALLER - izquierda */}
           <div style={{ position: "absolute", left: "0%", width: "calc(65% - 0.5rem)", height: "100%" }} className="relative group overflow-hidden">
             <Image
-              src="https://ext.same-assets.com/4226829879/821316787.jpeg"
+              src={featuredImages.taller}
               alt="Taller de cerámica"
               fill
               className="object-cover transition duration-500 grayscale group-hover:grayscale-0"
@@ -179,7 +186,7 @@ export default function HomeImageGrid() {
           {/* BIO - derecha */}
           <div style={{ position: "absolute", left: "calc(65% + 0.5rem)", width: "calc(35% - 0.5rem)", height: "100%" }} className="relative group overflow-hidden">
             <Image
-              src="https://ext.same-assets.com/4226829879/125366376.jpeg"
+              src={featuredImages.bio}
               alt="Bio"
               fill
               className="object-cover transition duration-500 grayscale group-hover:grayscale-0"
