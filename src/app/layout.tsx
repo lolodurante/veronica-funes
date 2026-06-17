@@ -17,7 +17,8 @@ const basic = Basic({
 
 export const metadata: Metadata = {
   title: "Veronica Funes | arte en cerámica | san isidro",
-  description: "Soy Veronica Funes, artista visual y ceramista. En mi casa taller, trabajo en mis obras, y piezas de cerámica funcionales, donde exploro mi fascinación por los esmaltes.",
+  description:
+    "Verónica Funes es artista ceramista argentina. Su práctica transcurre entre el más allá y el más acá, entre lo animal y lo humano, entre el cielo y la tierra.",
 };
 
 export default function RootLayout({

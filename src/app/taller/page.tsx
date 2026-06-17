@@ -4,17 +4,61 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
 const galleryImages = [
-  { id: "taller-1", src: "/Taller/20231122_120508.jpg", alt: "Piezas en proceso en el taller" },
-  { id: "taller-2", src: "/Taller/20240622_131554.jpg", alt: "Pieza de cerámica esmaltada" },
-  { id: "taller-3", src: "/Taller/20250513_184833.jpg", alt: "Modelado en cerámica" },
-  { id: "taller-4", src: "/Taller/20250513_185403.jpg", alt: "Figura en proceso de modelado" },
-  { id: "taller-5", src: "/Taller/20250716_203143.jpg", alt: "Mesa de trabajo con piezas" },
-  { id: "taller-6", src: "/Taller/20251128_124210.jpg", alt: "Piezas pequeñas en secado" },
-  { id: "taller-7", src: "/Taller/642209140_10240612308504265_7349170416794760412_n.jpg", alt: "Producción del taller" },
-  { id: "taller-8", src: "/Taller/643878331_10240613298169006_7333616980038477843_n.jpg", alt: "Mesa con objetos cerámicos" },
-  { id: "taller-9", src: "/Taller/482021268_10235521745083361_5907039608749815762_n.jpg", alt: "Objeto cerámico esmaltado" },
-  { id: "taller-10", src: "/Taller/482213305_10235521745403369_6774453415298871594_n.jpg", alt: "Escultura de cerámica en proceso" },
-  { id: "taller-11", src: "/Taller/84338517_10221473578967988_2122271004561506304_n.jpg", alt: "Alumno trabajando una pieza" },
+  {
+    id: "taller-1",
+    src: "/Taller/20231122_120508.jpg",
+    alt: "Piezas en proceso en el taller",
+  },
+  {
+    id: "taller-2",
+    src: "/Taller/20240622_131554.jpg",
+    alt: "Pieza de cerámica esmaltada",
+  },
+  {
+    id: "taller-3",
+    src: "/Taller/20250513_184833.jpg",
+    alt: "Modelado en cerámica",
+  },
+  {
+    id: "taller-4",
+    src: "/Taller/20250513_185403.jpg",
+    alt: "Figura en proceso de modelado",
+  },
+  {
+    id: "taller-5",
+    src: "/Taller/20250716_203143.jpg",
+    alt: "Mesa de trabajo con piezas",
+  },
+  {
+    id: "taller-6",
+    src: "/Taller/20251128_124210.jpg",
+    alt: "Piezas pequeñas en secado",
+  },
+  {
+    id: "taller-7",
+    src: "/Taller/642209140_10240612308504265_7349170416794760412_n.jpg",
+    alt: "Producción del taller",
+  },
+  {
+    id: "taller-8",
+    src: "/Taller/643878331_10240613298169006_7333616980038477843_n.jpg",
+    alt: "Mesa con objetos cerámicos",
+  },
+  {
+    id: "taller-9",
+    src: "/Taller/482021268_10235521745083361_5907039608749815762_n.jpg",
+    alt: "Objeto cerámico esmaltado",
+  },
+  {
+    id: "taller-10",
+    src: "/Taller/482213305_10235521745403369_6774453415298871594_n.jpg",
+    alt: "Escultura de cerámica en proceso",
+  },
+  {
+    id: "taller-11",
+    src: "/Taller/84338517_10221473578967988_2122271004561506304_n.jpg",
+    alt: "Alumno trabajando una pieza",
+  },
 ];
 
 export default function TallerPage() {
@@ -33,19 +77,31 @@ export default function TallerPage() {
           />
           <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
             <div className="bg-white p-8 max-w-lg text-center">
-              <h1 className="text-4xl md:text-5xl font-basic mb-4">EL TALLER</h1>
-              <p className="text-lg md:text-xl">Un espacio de experimentación y encuentro.</p>
+              <h1 className="text-4xl md:text-5xl font-basic mb-4">
+                EL TALLER
+              </h1>
+              <p className="text-lg md:text-xl">Pasar el arte por el cuerpo.</p>
             </div>
           </div>
         </div>
 
-        {/* Schedule Section */}
         <div className="bg-white py-16">
           <div className="container mx-auto px-4">
+            <div className="max-w-3xl mb-14 text-lg md:text-xl leading-relaxed text-gray-700">
+              <p>
+                Pasar el arte por el cuerpo. Entrar en contacto con la materia.
+                Desarrollar las ideas. Transformar, encontrar, volver a mirar.
+                Modelar. Entrar en los tiempos y en los procesos de la cerámica.
+              </p>
+            </div>
+
             <div className="flex flex-col md:flex-row gap-8">
               <div className="md:w-1/3">
                 <h2 className="text-3xl font-basic mb-6">Horarios</h2>
-                <p className="mb-4">Tres clases presenciales por mes.</p>
+                <p className="mb-4">
+                  El taller consta de tres clases por mes, de dos horas y media
+                  de duración cada una.
+                </p>
                 <p>La última semana de cada mes no hay clases.</p>
               </div>
 
@@ -54,21 +110,21 @@ export default function TallerPage() {
                   <h3 className="text-xl uppercase mb-4 font-bold">ADULTOS</h3>
                   <div className="space-y-1">
                     <p className="flex justify-between max-w-sm">
-                        <span>Lunes</span>
+                      <span>Lunes</span>
                       <span>18 a 20:30 hs</span>
-                      </p>
+                    </p>
                     <p className="flex justify-between max-w-sm">
-                        <span>Martes</span>
+                      <span>Martes</span>
                       <span>14 a 16:30 hs</span>
-                      </p>
+                    </p>
                     <p className="flex justify-between max-w-sm">
-                        <span>Miércoles</span>
+                      <span>Miércoles</span>
                       <span>9:30 a 12 hs / 18 a 20:30 hs</span>
-                      </p>
+                    </p>
                     <p className="flex justify-between max-w-sm">
-                        <span>Jueves</span>
+                      <span>Jueves</span>
                       <span>9:30 a 12 hs</span>
-                      </p>
+                    </p>
                   </div>
                 </div>
 
@@ -83,7 +139,9 @@ export default function TallerPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-xl uppercase mb-4 font-bold">ADOLESCENTES</h3>
+                  <h3 className="text-xl uppercase mb-4 font-bold">
+                    ADOLESCENTES
+                  </h3>
                   <div className="space-y-1">
                     <p className="flex justify-between max-w-sm">
                       <span>Jueves</span>
