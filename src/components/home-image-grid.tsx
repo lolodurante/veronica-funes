@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function HomeImageGrid() {
   const featuredImages = {
     obra: "/Obra/IMG_0854.JPG",
-    info: "/objetos/IMG_0722.jpeg",
+    contacto: "/objetos/IMG_0722.jpeg",
     taller: "/Taller/20250513_185403.jpg",
     bio: "/BIO/125366376.jpg",
   };
@@ -37,17 +37,17 @@ export default function HomeImageGrid() {
             </Link>
           </div>
         </div>
-        {/* TIENDA */}
+        {/* CONTACTO */}
         <div className="relative group overflow-hidden w-full aspect-square">
           <Image
-            src={featuredImages.info}
-            alt="Tienda de cerámica"
+            src={featuredImages.contacto}
+            alt="Contacto"
             fill
             className="object-cover transition duration-500 grayscale group-hover:grayscale-0"
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 text-white text-sm uppercase tracking-wider z-10">
             <Link
-              href="/info"
+              href="#contacto"
               className="
                 flex items-center gap-2 px-10 py-5 bg-black text-white text-xl uppercase tracking-wider
                 transition-colors duration-200
@@ -55,7 +55,7 @@ export default function HomeImageGrid() {
                 rounded-none
               "
             >
-              INFO
+              CONTACTO
               <span className="text-xl">➔</span>
             </Link>
           </div>
@@ -134,17 +134,17 @@ export default function HomeImageGrid() {
               </Link>
             </div>
           </div>
-          {/* TIENDA - derecha */}
+          {/* CONTACTO - derecha */}
           <div className="relative group overflow-hidden w-[60%] h-full">
             <Image
-              src={featuredImages.info}
-              alt="Tienda de cerámica"
+              src={featuredImages.contacto}
+              alt="Contacto"
               fill
               className="object-cover transition duration-500 grayscale group-hover:grayscale-0"
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 text-white text-sm uppercase tracking-wider z-10">
               <Link
-                href="/info"
+                href="#contacto"
                 className="
                   flex items-center gap-2 px-10 py-5 bg-black text-white text-xl uppercase tracking-wider
                   transition-colors duration-200
@@ -152,7 +152,7 @@ export default function HomeImageGrid() {
                   rounded-none
                 "
               >
-                INFO
+                CONTACTO
                 <span className="text-xl">➔</span>
               </Link>
             </div>

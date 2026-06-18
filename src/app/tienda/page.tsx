@@ -93,7 +93,7 @@ export default function TiendaPage() {
               Para pedidos personalizados o consultas específicas, contactame por email o teléfono.
             </p>
             <Link
-              href="/info"
+              href="#contacto"
               className="text-ceramica-dark underline underline-offset-4 hover:text-ceramica-brown"
             >
               Ver información de contacto

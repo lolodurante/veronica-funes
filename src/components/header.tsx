@@ -10,7 +10,7 @@ const navItems = [
   { name: "OBRA", path: "/obra" },
   { name: "TALLER", path: "/taller" },
   { name: "BIO", path: "/bio" },
-  { name: "INFO", path: "/info" },
+  { name: "CONTACTO", path: "#contacto" },
 ];
 
 export function Header() {
@@ -34,7 +34,7 @@ export function Header() {
             </Link>
           </div>
           {/* Navigation items below logo */}
-          <nav className="flex flex-nowrap justify-center space-x-2 mb-0">
+          <nav className="flex flex-wrap justify-center gap-x-1 gap-y-0 px-2 mb-0">
             {navItems.map((item) => (
               <Link
                 key={item.path}

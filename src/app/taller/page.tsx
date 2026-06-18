@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
@@ -95,71 +94,6 @@ export default function TallerPage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-8">
-              <div className="md:w-1/3">
-                <h2 className="text-3xl font-basic mb-6">Horarios</h2>
-                <p className="mb-4">
-                  El taller consta de tres clases por mes, de dos horas y media
-                  de duración cada una.
-                </p>
-                <p>La última semana de cada mes no hay clases.</p>
-              </div>
-
-              <div className="md:w-2/3">
-                <div className="mb-8">
-                  <h3 className="text-xl uppercase mb-4 font-bold">ADULTOS</h3>
-                  <div className="space-y-1">
-                    <p className="flex justify-between max-w-sm">
-                      <span>Lunes</span>
-                      <span>18 a 20:30 hs</span>
-                    </p>
-                    <p className="flex justify-between max-w-sm">
-                      <span>Martes</span>
-                      <span>14 a 16:30 hs</span>
-                    </p>
-                    <p className="flex justify-between max-w-sm">
-                      <span>Miércoles</span>
-                      <span>9:30 a 12 hs / 18 a 20:30 hs</span>
-                    </p>
-                    <p className="flex justify-between max-w-sm">
-                      <span>Jueves</span>
-                      <span>9:30 a 12 hs</span>
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mb-8">
-                  <h3 className="text-xl uppercase mb-4 font-bold">NIÑOS</h3>
-                  <div className="space-y-1">
-                    <p className="flex justify-between max-w-sm">
-                      <span>Martes</span>
-                      <span>17:30 a 19 hs</span>
-                    </p>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-xl uppercase mb-4 font-bold">
-                    ADOLESCENTES
-                  </h3>
-                  <div className="space-y-1">
-                    <p className="flex justify-between max-w-sm">
-                      <span>Jueves</span>
-                      <span>17:30 a 19:30 hs</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-12 text-center">
-              <Link
-                href="tel:+5491168339971"
-                className="inline-block bg-ceramica-dark text-white px-8 py-3 rounded-full hover:bg-opacity-90 transition-colors"
-              >
-                ¿Dudas?
-              </Link>
-            </div>
           </div>
         </div>
 
