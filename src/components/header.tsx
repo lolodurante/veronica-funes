@@ -1,9 +1,11 @@
 "use client";
 
-import Link from "next/link";
+import { WhatsAppIcon } from "@/components/whatsapp-icon";
+import { contact } from "@/lib/contact";
+import { Facebook, Instagram, Mail } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShoppingBasket } from "lucide-react";
 
 const navItems = [
   { name: "INICIO", path: "/" },
@@ -47,7 +49,50 @@ export function Header() {
               </Link>
             ))}
           </nav>
-
+        </div>
+      </div>
+      <div className="border-b border-gray-200 bg-gray-100/80">
+        <div className="container mx-auto flex flex-wrap items-center justify-center gap-x-5 gap-y-2 px-4 py-3 text-sm">
+          <Link
+            href={contact.whatsappHref}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`WhatsApp de Verónica Funes: ${contact.phone}`}
+            className="inline-flex items-center gap-2 font-medium transition-opacity hover:opacity-60"
+          >
+            <WhatsAppIcon className="h-[18px] w-[18px]" />
+            <span>WhatsApp</span>
+          </Link>
+          <Link
+            href={contact.instagramHref}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Instagram de Verónica Funes: ${contact.instagram}`}
+            className="inline-flex items-center gap-2 transition-opacity hover:opacity-60"
+          >
+            <Instagram size={18} />
+            <span className="hidden sm:inline">{contact.instagram}</span>
+            <span className="sm:hidden">Instagram</span>
+          </Link>
+          <Link
+            href={contact.facebookHref}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Facebook de Verónica Funes"
+            className="inline-flex items-center gap-2 transition-opacity hover:opacity-60"
+          >
+            <Facebook size={18} />
+            <span>Facebook</span>
+          </Link>
+          <Link
+            href={contact.emailHref}
+            aria-label={`Email de Verónica Funes: ${contact.email}`}
+            className="inline-flex items-center gap-2 transition-opacity hover:opacity-60"
+          >
+            <Mail size={18} />
+            <span className="hidden md:inline">{contact.email}</span>
+            <span className="md:hidden">Email</span>
+          </Link>
         </div>
       </div>
     </header>

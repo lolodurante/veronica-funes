@@ -1,7 +1,7 @@
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 import Image from "next/image";
 import Link from "next/link";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 
 const products = [
   {
@@ -80,7 +80,9 @@ export default function TiendaPage() {
                   />
                 </div>
                 <h3 className="text-xl font-medium mb-2">{product.name}</h3>
-                <p className="text-gray-700 mb-4">${product.price.toLocaleString()}</p>
+                <p className="text-gray-700 mb-4">
+                  ${product.price.toLocaleString()}
+                </p>
                 <button className="bg-ceramica-dark text-white px-4 py-2 w-full hover:bg-opacity-90 transition-colors">
                   Agregar al carrito
                 </button>
@@ -90,7 +92,8 @@ export default function TiendaPage() {
 
           <div className="text-center mt-16">
             <p className="text-gray-600 mb-4">
-              Para pedidos personalizados o consultas específicas, contactame por email o teléfono.
+              Para pedidos personalizados o consultas específicas, contactame
+              por email o WhatsApp.
             </p>
             <Link
               href="#contacto"
